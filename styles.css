@@ -448,9 +448,23 @@ h3 {
             font-size: 3rem !important;
         }
     }
+
+    .hide-on-tablet {
+        display: none;
+    }
 }
 
 @media screen and (max-width:600px) {
+    h3 {
+        font-size: 1rem;
+        margin: 0;
+    }
+    
+    h2 {
+        font-size: 1.4rem;
+        margin: 0;
+    }
+
     .rn {
         transform: scale(0.5);
     }
@@ -480,5 +494,9 @@ h3 {
         span {
             font-size: 2rem !important;
         }
+    }
+
+    .hide-on-mobile {
+        display: none;
     }
 }
