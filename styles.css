@@ -452,6 +452,10 @@ h3 {
     .hide-on-tablet {
         display: none;
     }
+
+    .testimonial-card {
+        width: calc(100%);
+    }
 }
 
 @media screen and (max-width:600px) {
@@ -498,5 +502,12 @@ h3 {
 
     .hide-on-mobile {
         display: none;
+    }
+
+    .testimonials {
+        height: 500px;
+    }
+    .testimonial-card-wrapper {
+        padding: 0 40px;
     }
 }
