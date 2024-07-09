@@ -243,7 +243,21 @@ header {
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
 
+  .center-column {
+    order: 1;
+  }
+
+  .left-column {
+    order: 2;
+  }
+
+  .right-column
+    {
+        order: 3;
+    }
+
   body {
+    /* background-color: black; */
     max-width: 100%;
     overflow-x: hidden;
   }
@@ -290,15 +304,18 @@ header {
   .step {
     /* display: block; */
     /* justify-content: start; */
-    flex-direction: column-reverse;
-    margin-bottom: 20px;
+    flex-direction: column;
+    margin-bottom: 50px;
     gap: 12px;
   }
 
+  .right-column p {
+    text-align: center;
+  }
+
   .right-column {
-    /* background-color: var(--background-color); */
-    background: linear-gradient(transparent 0%, var(--background-color) 5% 95%, transparent 95%);
-    z-index: 2;
+    background-color: var(--background-color);
+    background: linear-gradient(rgba(0,0,0,0) 0%, var(--background-color) 10%, var(--background-color) 95%, rgba(0,0,0,0) 100%);     z-index: 2;
     align-items: center;
   }
 
@@ -306,7 +323,7 @@ header {
     margin: 0;
   }
 
-  .number,
+  
   .nav-menu,
   .user-menu {
     display: none;

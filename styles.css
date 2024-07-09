@@ -392,20 +392,7 @@ h3 {
   
 
 @media (max-width: 768px) {
-
-    .stats-container {
-        flex-direction: column;
-        gap: 3rem;
-        margin-top: 0;
-        /* display: flex;
-        justify-content: space-between;
-        max-width: 800px;
-        margin: 0 auto; */
-    }
-
-    .stats-container h2, .stats-container p{
-        font-size: 2rem;
-    }
+    
 
     .nav-menu,
     .user-menu {
