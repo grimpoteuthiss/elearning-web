@@ -136,7 +136,7 @@ a {
 }
 
 .rn1 {
-    left: 200px;
+    left: 180px;
     top: 300px;
 }
 
@@ -149,8 +149,6 @@ a {
     right: 300px;
     top: 500px;
 }
-
-
 
 .rn5 {
     position: absolute;
@@ -193,6 +191,7 @@ a {
     }
     span {
         color: var(--primary-color);
+        font-size: 4rem !important;
     }
 }
 
@@ -398,16 +397,88 @@ h3 {
 /* foote */
 
 .footer {
-    background-color: var(--secondary-color); /* This is an approximation of the green color in the image */
-    height: 50px; /* Adjust this value to match the desired height */
+    background-color: var(--secondary-color);
+    height: 50px;
     width: 100%;
     margin-top: 100px;
-    /* position: fixed; */
+
     bottom: 0;
     left: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+
     border-style: solid;
     border-width: 2px 0;
   }
+
+/* tablet */
+
+@media screen and (max-width: 992px) {
+    .rn {
+        transform: scale(0.8);
+    }
+
+    .rn1 {
+        display: none;
+    }
+
+    .rn2 {
+        right: 40px;
+        top: 150px;
+    }
+    
+    .rn3 {
+        right: 100px;
+        top: 500px;
+    }
+
+    .rn5 {
+        display: none;
+    }
+    .header {
+        height: 550px;
+        p {
+            font-size: 3rem;
+        }
+        a {
+            font-size: 1rem;
+        }
+        span {
+            font-size: 3rem !important;
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+    .rn {
+        transform: scale(0.5);
+    }
+    
+    .rn2 {
+        right: 10px;
+        top: 120px;
+    }
+    
+    .rn3 {
+        right: 40px;
+        top: 380px;
+    }
+
+    .rn6 {
+        display: none;
+    }
+
+    .header {
+    height: 500px;
+        p {
+            font-size: 2rem;
+        }
+        a {
+            font-size: 1rem;
+        }
+        span {
+            font-size: 2rem !important;
+        }
+    }
+}

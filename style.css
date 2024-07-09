@@ -10,6 +10,13 @@
     --background-color: #fdf9f8;
 }
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
 body {
     background-color: var(--background-color);
 }
@@ -215,14 +222,72 @@ header {
 }
 
 .footer {
-    background-color: var(--secondary-color); /* This is an approximation of the green color in the image */
-    height: 50px; /* Adjust this value to match the desired height */
+    background-color: var(--secondary-color);
+    height: 50px;
     width: 100%;
     margin-top: 100px;
-    /* position: fixed; */
+
     bottom: 0;
     left: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    border-style: solid;
+    border-width: 2px 0;
   }
+
+  @media screen and (max-width: 768px) {
+    .step {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .left-column {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .right-column {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .center-column {
+        display: none;
+    }
+
+    .page-center::before {
+        display: none;
+    }
+
+    header {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-left {
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .user-menu {
+        width: 100%;
+        justify-content: flex-end;
+    }
+}
