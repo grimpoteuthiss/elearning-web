@@ -322,6 +322,7 @@ a {
     background-color: var(--primary-color);
     border-radius: 1rem;
     padding: 20px;
+    flex-grow: 1;
     width: calc(45%);
     display: flex;
     gap: 20px;
