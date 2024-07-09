@@ -45,9 +45,10 @@ a {
     color: var(--text-color);
 }
 
-.material-symbols-outlined {
+.sysicon {
     font-size: 1rem !important;
-}
+  }
+  
 
 .page-center {
     max-width: 1000px;
@@ -385,7 +386,77 @@ h3 {
     background: var(--tertiary-color);
 }
 
+.burger {
+    display: none !important;
+  }
+  
+
 @media (max-width: 768px) {
+
+    .stats-container {
+        flex-direction: column;
+        gap: 3rem;
+        margin-top: 0;
+        /* display: flex;
+        justify-content: space-between;
+        max-width: 800px;
+        margin: 0 auto; */
+    }
+
+    .stats-container h2, .stats-container p{
+        font-size: 2rem;
+    }
+
+    .nav-menu,
+    .user-menu {
+      display: none;
+    }
+
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+      }
+    
+      .nav-menu.open {
+        display: block;
+        margin-left: 0;
+      }
+    
+      .nav-left.open {
+        display: block;
+        margin-left: 0;
+      }
+    
+      .nav-container.open {
+        flex-direction: column;
+        gap: 12px;
+        align-items: start;
+      }
+    
+      .nav-menu li {
+        margin-left: 12px;
+        margin-bottom: 12px;
+      }
+    
+      .logo.open {
+        border-bottom: 2px solid var(--black);
+      }
+    
+      header p {
+        text-align: center;
+      }
+    
+      .burger {
+        display: block !important;
+        font-size: 1.8rem;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        color: black;
+        cursor: pointer;
+      }
+    
+
     .swiper-slide {
         flex-direction: column;
     }
