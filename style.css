@@ -33,6 +33,7 @@ h1 {
 
 a {
     text-decoration: none;
+    color: var(--text-color);
 }
 
 .material-symbols-outlined {
@@ -68,6 +69,11 @@ a {
     display: flex;
     flex-direction: column;
     gap: 12px;
+}
+
+.left-column:hover {
+    transition: all 0.3s ease-in-out;
+    box-shadow: 4px 4px 0px 0px var(--secondary-color);
 }
 
 .course-desc {
@@ -179,6 +185,13 @@ header {
 .nav-menu li {
     margin-left: 24px;
     color: var(--white);
+}
+
+.nav-menu li:hover {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: var(--primary-color);
+    transition: all 0.3s ease-in-out;
 }
 
 .nav-left {

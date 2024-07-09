@@ -42,6 +42,7 @@ h2 {
 
 a {
     text-decoration: none;
+    color: var(--text-color);
 }
 
 .material-symbols-outlined {
@@ -104,8 +105,7 @@ a {
     text-decoration-line: underline;
     text-decoration-style: wavy;
     text-decoration-color: var(--primary-color);
-    transition: all 0.5s ease-in-out;
-
+    transition: all 0.3s ease-in-out;
 }
 
 .nav-left {
@@ -187,7 +187,9 @@ a {
         border-width: 2px;
     }
     a:hover {
+        transition: all 0.3s ease-in-out;
         background-color: var(--tertiary-color);
+        box-shadow: 4px 4px 0px 0px var(--secondary-color);
     }
     span {
         color: var(--primary-color);
@@ -248,6 +250,13 @@ a {
     gap: 10px;
 }
 
+.pop-course-card:hover {
+    top: -1px;
+    left: -1px;
+    box-shadow: 8px 8px 0px 0px var(--secondary-color);
+    transition: all 0.2s ease-in-out;
+}
+
 .pop-course-card img {
     border-radius: 8px;
     border-color: var(--background-color);
@@ -281,6 +290,12 @@ a {
     border-radius: 1rem;
     cursor: pointer;
   }
+
+.view-all:hover {
+    background-color: var(--secondary-color);
+    box-shadow: 4px 4px 0px 0px var(--tertiary-color);
+    transition: all 0.2s ease-in-out;
+}
 
 /* testimonih */
 
