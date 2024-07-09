@@ -10,6 +10,13 @@
   --background-color: #fdf9f8;
 }
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
 body {
   background-color: var(--background-color);
 }
