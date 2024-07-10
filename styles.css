@@ -4,6 +4,8 @@
     --primary-color:#ffe043;
     --secondary-color:#60d5ec;
     --tertiary-color: #75bc52;
+    --red-darker-color: #E64564;
+    --red-color: #F38697;
     --black: #333;
     --white: #fff;
     --gray: #666;
@@ -299,7 +301,7 @@ a {
   }
 
 .view-all:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--red-darker-color);
     box-shadow: 4px 4px 0px 0px var(--tertiary-color);
     transition: all 0.2s ease-in-out;
 }
