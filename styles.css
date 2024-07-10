@@ -109,6 +109,13 @@ a {
     transition: all 0.3s ease-in-out;
 }
 
+.user-menu span:hover {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: var(--primary-color);
+    transition: all 0.3s ease-in-out;
+  }
+
 .nav-left {
     display: flex;
     align-items: center;
