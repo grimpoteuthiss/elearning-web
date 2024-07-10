@@ -229,18 +229,19 @@ header {
 }
 
 .footer {
-  background-color: var(
-    --secondary-color
-  ); /* This is an approximation of the green color in the image */
-  height: 50px; /* Adjust this value to match the desired height */
+  background-color: var(--secondary-color);
+  height: 50px;
   width: 100%;
   margin-top: 100px;
-  /* position: fixed; */
+
   bottom: 0;
   left: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  border-style: solid;
+  border-width: 2px 0;
 }
 
 .burger {
