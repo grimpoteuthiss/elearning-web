@@ -270,6 +270,7 @@ a {
 
 
 .course-nav li:hover, .course-nav li:focus {
+  transition: all 0.3s ease-in-out;
   background-color: var(--red-color);
   a {
     color: var(--white);
@@ -305,6 +306,22 @@ a {
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
+
+  .course-nav {
+    background-color: var(--primary-color);
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none;
+    display: flex;
+    justify-content:left;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .course-nav ul {
+    display: flex;
+    list-style-type: none;
+    width: max-content;
+  }  
 
   .center-column {
     order: 1;

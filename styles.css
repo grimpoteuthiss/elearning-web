@@ -316,7 +316,7 @@ a {
     gap: 20px;
     justify-content: center;
     align-items: center;
-    height: 360px;
+    /* height: 440px; */
 }
 
 .testimonial-swiper {
