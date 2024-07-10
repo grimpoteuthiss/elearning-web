@@ -4,6 +4,8 @@
   --primary-color: #ffe043;
   --secondary-color: #60d5ec;
   --tertiary-color: #75bc52;
+  --red-darker-color: #E64564;
+  --red-color: #F38697;
   --black: #333;
   --white: #fff;
   --text-color: #333;
@@ -147,6 +149,7 @@ header {
   align-items: center;
   margin-bottom: 50px;
   border-bottom: 2px solid var(--black);
+  border-top: 2px solid var(--black);
 }
 
 /* navigation bar */
@@ -185,12 +188,10 @@ header {
 .nav-menu {
   display: flex;
   list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
 
 .nav-menu li {
-  margin-left: 24px;
+  margin-left: 35px;
   color: var(--white);
 }
 
@@ -228,6 +229,55 @@ header {
   border-color: var(--black);
 }
 
+.burger {
+  display: none !important;
+}
+
+/* nav course */
+
+.course-nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.course-nav {
+  background-color: var(--primary-color);
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none;
+  display: flex;
+  justify-content: center;
+  -webkit-overflow-scrolling: touch;
+}
+
+.course-nav li {
+  padding: 10px 30px;
+  border-left: 2px solid var(--black);
+}
+
+.course-nav-end {
+  border-right: 2px solid var(--black);
+}
+
+
+.course-nav li:hover, .course-nav li:focus {
+  background-color: var(--red-color);
+  a {
+    color: var(--white);
+    font-weight: bold;
+  }
+}
+
+.course-nav-active {
+  background-color: var(--red-darker-color);
+  a {
+    color: var(--white);
+    font-weight: bold;
+  }
+}
+
+/* footer */
+
 .footer {
   background-color: var(--secondary-color);
   height: 50px;
@@ -242,10 +292,6 @@ header {
 
   border-style: solid;
   border-width: 2px 0;
-}
-
-.burger {
-  display: none !important;
 }
 
 @media only screen and (max-width: 768px) {
